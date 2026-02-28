@@ -23,5 +23,11 @@ if we give step as 2 and starting point as 0 then it will print even number from
 
 #reverse number counting in for loop range variation
 '''for printing 9,8,7,6....0 we can use range(9,-1,-1) because the starting point is 9 and ending point is -1 and step is -1'''
-for i 9in range(9,-1,-1):
+for i in range(9,-1,-1):
     print(i)
+
+#for loop without range funtion
+a="Country"
+for i in a:
+    print(i)
+'''This will print each character of the string in new line because we are iterating through the string using for loop and each character is treated as an element of the string'''
