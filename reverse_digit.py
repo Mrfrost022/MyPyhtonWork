@@ -8,7 +8,7 @@ else:
     rev_num=int(num[::-1])
     print("The reverse of the given number is", rev_num*(-1))
 '''
-
+'''
 #code for reversing the digit of a number using while loop
 num=int(input("Enter a number: "))
 rev_num=0
@@ -27,3 +27,16 @@ else:
         rev_num=rev_num*10+l
         num=num//10
 print("The reverse of the given number is", rev_num)
+'''
+#optimised code for reversing the digit of a number using while loop
+num=int(input("Enter a number: "))
+absNum=abs(num)
+rev_num=0
+while absNum>0:
+    l=absNum%10
+    rev_num=rev_num*10+l
+    absNum=absNum//10
+if num>=0:
+    print("The reverse of the given number is", rev_num)
+else:
+    print("The reverse of the given number is", rev_num*(-1))
