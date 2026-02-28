@@ -14,3 +14,14 @@ print("the multiplication of first 10 number is",mul)
 n=int(input("Enter the number whose table you want to print: "))
 for i in range (1,11):
     print(n,"x",i,"=",n*i)
+
+#for loop range variation- step
+for i in range (1,11,2):
+    print(i)
+'''this will print odd number from 1 to 10 because we have given step as 2 and starting point is 1
+if we give step as 2 and starting point as 0 then it will print even number from 0 to 10'''
+
+#reverse number counting in for loop range variation
+'''for printing 9,8,7,6....0 we can use range(9,-1,-1) because the starting point is 9 and ending point is -1 and step is -1'''
+for i 9in range(9,-1,-1):
+    print(i)
